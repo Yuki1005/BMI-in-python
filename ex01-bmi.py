@@ -1,0 +1,6 @@
+height = float(input("身長を入力してください(単位はメートル)。>>"))
+weight = float(input("体重を入力してください(単位はキログラム)。>>"))
+bmi = weight / (height ** 2)
+(bmi >= 25) and print("\nBMIは%.2f"%bmi,"です。","肥満です。",sep="")
+(25 > bmi >= 18.5) and print("\nBMIは%.2f"%bmi,"です。","普通体重です。",sep="")
+(18.5 > bmi) and print("\nBMIは%.2f"%bmi,"です。","低体重です。",sep="")
